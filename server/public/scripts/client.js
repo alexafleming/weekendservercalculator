@@ -102,7 +102,7 @@ function getHistory() {
         alert('Something went wrong.');
      });
 }
-
+//function to clear caclcutor 
 function clearCalculator() {
     document.querySelector('#firstNumber').value = '';
     document.querySelector('#secondNumber').value = '';
