@@ -1,11 +1,12 @@
 let clientCalculator = '';
 
+//function added below for + - * /
 function addition() {
     clientCalculator = '';
     clientCalculator = '+';
     console.log('in addition function');
     console.log(clientCalculator);
-    // Post route sends clientOperator to server
+   r
     axios.post('/operator' , [clientCalculator]).then((response) => {
         console.log(response);
      }).catch((error) => {
@@ -18,7 +19,7 @@ function subtraction() {
     clientCalculator = '-';
     console.log('in subtraction function');
     console.log(clientCalculator);
-    // Post route sends clientOperator to server
+
     axios.post('/operator' ,[clientCalculator]).then((response) => {
         console.log(response);
      }).catch((error) => {
@@ -54,7 +55,7 @@ function division() {
      });
 }
 
-
+//get answer function 
 function answer() {
     let firstNumber = Number(document.querySelector('#firstNumber').value);
     let secondNumber = Number(document.querySelector('#secondNumber').value);
