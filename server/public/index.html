@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Server Side Caluculator</title>
+</head>
+<header>
+    <h1 id="title">Weekend Server Calculator</h1>
+</header>
+
+<body>
+    <div class="centered-div">
+        <input id="firstNumber" type="text" placeholder="First Number" />
+        <button type="button" onclick="addition()">+</button>
+        <button type="button" onclick="subtraction()">-</button>
+        <button type="button" onclick="multiplcation()">*</button>
+        <button type="button" onclick="division()">/</button>
+        <input id="secondNumber" type="text" placeholder="Second Number" />
+        <button type="button" onclick="answer()">=</button>
+        <button type="button" onclick="clearCalculator()">C</button>
+        <h2>
+            <div id="result">0</div>
+        </h2>
+        <div id="history">
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="scripts/client.js"></script>
+</body>
+
+</html>

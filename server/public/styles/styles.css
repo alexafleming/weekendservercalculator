@@ -1,0 +1,20 @@
+ body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #CBCE91FF, #EA738DFF);
+    }
+  #title {
+    text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 43px;
+  }
+
+  .centered-div {
+    text-align: center;
+  }
+
+  #result {
+    color: white;
+    font-size: 32px;
+  }

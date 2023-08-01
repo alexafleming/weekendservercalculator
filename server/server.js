@@ -1,15 +1,10 @@
-const express = require('express');
+let express = require('express');
 
-const app = express();
-const port = process.env.PORT || 5005;
+let app = express();
+const port = process.env.PORT || 5001;
 
-app.use(express.static('server/public'));
 app.use(express.json());
-
-app.listen(port, () => {
-  console.log('listening on port', port);
-});
-
+app.use(express.static('server/public'));
 
 let history = [];
 let operator = '';
@@ -66,3 +61,7 @@ app.post('/inputs', (req,res) => {
     console.log(result);
     res.sendStatus(201);
 });
+
+app.listen(port, () => {
+    console.log('listening on port', port);
+  });
